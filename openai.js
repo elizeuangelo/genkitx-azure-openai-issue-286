@@ -5,8 +5,6 @@ import { openAI, gpt4o } from 'genkitx-openai';
 config();
 // Load environment variables from .env file
 
-const apiVersion = '2025-01-01-preview';
-
 export const ai = genkit({
 	plugins: [
 		openAI({
@@ -31,7 +29,7 @@ const getWeather = ai.defineTool(
 	async ({ location }) => {
 		// Fake weather data
 		const randomTemp = Math.floor(Math.random() * 30) + 50; // Random temp between 50 and 80
-		const conditions = ['sunny', 'cloudy', 'rainy', 'snowy'] as any;
+		const conditions = ['sunny', 'cloudy', 'rainy', 'snowy'];
 		const randomCondition = conditions[Math.floor(Math.random() * conditions.length)];
 
 		return { location, temperature: randomTemp, condition: randomCondition };
