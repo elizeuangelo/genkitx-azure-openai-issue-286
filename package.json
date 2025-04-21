@@ -1,0 +1,24 @@
+{
+	"name": "genkitx-azure-openai-issue-286",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "",
+	"main": "main.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "tsc && node main.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"packageManager": "pnpm@10.8.1",
+	"devDependencies": {
+		"typescript": "^5.8.3"
+	},
+	"dependencies": {
+		"dotenv": "^16.5.0",
+		"genkit": "^1.6.2",
+		"genkitx-azure-openai": "^0.21.1",
+		"openai": "^4.95.1"
+	}
+}
