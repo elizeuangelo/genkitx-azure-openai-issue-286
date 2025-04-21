@@ -15,11 +15,11 @@ importers:
         specifier: ^1.6.2
         version: 1.6.2
       genkitx-azure-openai:
-        specifier: ^0.21.1
-        version: 0.21.1(genkit@1.6.2)
+        specifier: ^0.22.1
+        version: 0.22.1(genkit@1.6.2)
       genkitx-openai:
-        specifier: ^0.21.0
-        version: 0.21.0(genkit@1.6.2)(zod@3.24.3)
+        specifier: ^0.22.0
+        version: 0.22.0(genkit@1.6.2)(zod@3.24.3)
       openai:
         specifier: ^4.95.1
         version: 4.95.1(zod@3.24.3)
@@ -528,13 +528,13 @@ packages:
   genkit@1.6.2:
     resolution: {integrity: sha512-Dy25Txfxzg0eN+/Dj5YWjtEJ9mj4n5q57AqphYzZvd+Zem5vLvjTCbIKYy4/CJR+8/a92HB9lQO3dtb3ygLdIg==}
 
-  genkitx-azure-openai@0.21.1:
-    resolution: {integrity: sha512-fuFBfPJSUuT0vvJ2zOMxXuAqwJSCsHwJr5NpzSNSwdCGysAuj7utmdRF6TB4Us60/E/l6kGt2aRv0MbpYf/smw==}
+  genkitx-azure-openai@0.22.1:
+    resolution: {integrity: sha512-e7lYZG8QyzXRKF5V/Mv4HcnvnApX5oT3ClI6COb2T5yIkNpEcjosmSFUPSvlmvg/CW+G4/XEQcZtViYJlHMlYA==}
     peerDependencies:
       genkit: ^0.9.0 || ^1.0.0
 
-  genkitx-openai@0.21.0:
-    resolution: {integrity: sha512-pqVeDeGRwZSWrWu9hRU8c0kbFb1CTcQ5bBwa+zTy2BIIzWmw9zh/nvIIPba1xBIlH7V7D8M5NILT+UjlpLka7w==}
+  genkitx-openai@0.22.0:
+    resolution: {integrity: sha512-rlUXHozwsuySc++GyDTfvt+HcSyDcn6bzLPMOL+uJOC9hi7XXYIDU5/w4jBpYNz4c3F5vZUuxw2WrXG6bVuBDQ==}
     peerDependencies:
       genkit: ^0.9.0 || ^1.0.0
 
@@ -1523,14 +1523,14 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  genkitx-azure-openai@0.21.1(genkit@1.6.2):
+  genkitx-azure-openai@0.22.1(genkit@1.6.2):
     dependencies:
       '@azure/openai': 2.0.0
       genkit: 1.6.2
     transitivePeerDependencies:
       - supports-color
 
-  genkitx-openai@0.21.0(genkit@1.6.2)(zod@3.24.3):
+  genkitx-openai@0.22.0(genkit@1.6.2)(zod@3.24.3):
     dependencies:
       genkit: 1.6.2
       openai: 4.95.1(zod@3.24.3)
