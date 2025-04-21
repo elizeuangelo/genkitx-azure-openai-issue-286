@@ -1,6 +1,6 @@
 import { config } from 'dotenv';
 import { genkit, z } from 'genkit';
-import { azureOpenAI, gpt4o } from 'genkitx-azure-openai';
+import { openAI, gpt4o } from 'genkitx-openai';
 
 config();
 // Load environment variables from .env file
@@ -9,10 +9,8 @@ const apiVersion = '2025-01-01-preview';
 
 export const ai = genkit({
 	plugins: [
-		azureOpenAI({
-			apiKey: process.env.AZURE_OPENAI_API_KEY,
-			endpoint: process.env.AZURE_OPENAI_ENDPOINT,
-			apiVersion,
+		openAI({
+			apiKey: process.env.OPENAI_API_KEY,
 		}),
 	],
 	model: gpt4o.withVersion('2024-11-20'),
